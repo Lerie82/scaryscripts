@@ -1,4 +1,6 @@
 #!/bin/bash
+# Lerie Taylor 2023
+# scarylerie@gmail.com
 dev=wlan0
 
 sudo ip link set $dev down
