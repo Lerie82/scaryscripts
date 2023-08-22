@@ -1,2 +1,0 @@
-# Nmap 7.01 scan initiated Tue Aug 22 13:05:11 2023 as: nmap -p80,443 -iR 10 -T4 --open -oG scanresult
-# Nmap done at Tue Aug 22 13:05:21 2023 -- 11 IP addresses (1 host up) scanned in 10.61 seconds
