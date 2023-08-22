@@ -1,0 +1,2 @@
+# Nmap 7.01 scan initiated Wed Aug  2 09:17:25 2023 as: nmap --open -vvv -p8080 --script=http-open-proxy --script-args proxy-url=https://api.ipify.org --script-args proxy.pattern=200 -iR 50 -oG -
+# Ports scanned: TCP(1;8080) UDP(0;) SCTP(0;) PROTOCOLS(0;)

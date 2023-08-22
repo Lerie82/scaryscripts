@@ -1,0 +1,6 @@
+#!/bin/bash
+dev=wlan0
+
+sudo ip link set $dev down
+sudo iw dev $dev set txpower fixed 30mBm
+sudo ip link set $dev up
