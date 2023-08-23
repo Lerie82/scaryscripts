@@ -1,22 +1,24 @@
 # scaryscripts
 Collection of bash scripts for nerds
 
-### Scripts: Mobile
+### Mobile
 - Android (adb) information
 
-### Scripts: Local
+### Local
 - Change MAC address
 - Increate TX power on wifi antenna
 
-### Scripts: WiFi
+### WiFi
 - Reset WLAN
 - Show local access points
 - Deauthentication attack for WiFi network
 - Collect WiFi information
 
-### Scripts: Utilities
+### Utilities
 - Get IP's from a file
 - DIG domain names
+- Get all URL's from a given webpage
 
-### Scripts: WordPress
+### Scanners
 - Random WordPress wp-json scanner
+- Get proxies from "free proxy sites"

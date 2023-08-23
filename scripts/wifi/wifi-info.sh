@@ -25,7 +25,7 @@ sudo airmon-ng check kill
 my_mac=$(ifconfig $my_iface |grep -Eo '([0-9a-f]{2}\:){5}[0-9a-f]{2}')
 
 #stop the interface
-sudo aitmon-ng stop mon0
+sudo airmon-ng stop mon0
 sudo airmon-ng stop $my_iface
 
 #start the interface in monitor mode

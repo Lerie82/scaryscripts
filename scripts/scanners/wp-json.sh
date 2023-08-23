@@ -3,8 +3,8 @@
 #2023
 
 ## TODO #################
-# [] Remove hardcoded directory value for getips.sh
-## TODO #################
+# [] Remove hardcoded directory values
+#########################
 
 # This script will attempt to locate the wp-json rpc file using nmap and curl.
 
@@ -30,6 +30,13 @@ fi
 echo -e "\e${BGRED}Number of hosts to scan: ${NUMHOSTS}\e${NOC}"
 echo -e "\e${GREEN}Scanning\e${NOC}.."
 sudo nmap -p80,443 -iR $NUMHOSTS -T4 --open -oG scanresult 2>&1>/dev/null
+resultcount=$(wc -l scanresult |cut -d' ' -f1)
+
+if [ $resultcount -lt 3 ]
+then
+	echo -e "\e${RED}No hosts found.\e${NOC}"
+	exit 1
+fi
 
 echo -e "\e${GREEN}Gathering IP's..\e${NOC}"
 /home/sun/Downloads/sunj/scripts/utils/getips.sh scanresult|sed -E 's/([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})/http:\/\/\1\/wp-json/g' >hosts
