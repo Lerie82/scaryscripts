@@ -14,6 +14,11 @@ Collection of bash scripts for nerds
 - Deauthentication attack for WiFi network
 - Collect WiFi information
 
+### Pornhub
+- Get information from direct video URL's
+- Grab all the categories
+- Make searches and save all the links
+
 ### Utilities
 - Get IP's from a file
 - DIG domain names

@@ -9,7 +9,7 @@ then
 	exit 1
 fi
 
-# get the url (of a video) from the user
+# get the url (of a video) from user input
 # ie; https://www.pornhub.com/view_video.php?viewkey=64eea7c904e51
 
 # download to file
