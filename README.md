@@ -27,3 +27,6 @@ Collection of bash scripts for nerds
 ### Scanners
 - Random WordPress wp-json scanner
 - Get proxies from "free proxy sites"
+
+### Wordlists
+- Over 1 million words (1,004,799)

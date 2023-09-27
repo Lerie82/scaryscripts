@@ -1,0 +1,18 @@
+1. get url from user
+	ham_url=https://xhamster.com/videos/big-ass-up-3856570
+
+2. download & save the HTML source, cookies, and headers from ham_url to a file
+	curl -c cookies -D headers -o html -vL $ham_url
+
+3. get information from downloaded files
+	#get thumbnail URL
+	cat tmp |grep -oP "^http.+$"|tail -1
+
+	#get description
+
+	#get tags
+
+	#get category
+
+	#get playlist URL
+	cat html |grep -oP '(https.+m3u8)'|head -n1
