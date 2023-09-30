@@ -3,6 +3,7 @@ Collection of bash scripts for nerds
 
 ### Mobile
 - Android (adb) information
+- Screenshots
 
 ### Local
 - Change MAC address
