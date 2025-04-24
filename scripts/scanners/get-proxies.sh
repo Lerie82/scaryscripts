@@ -1,8 +1,8 @@
 #!/bin/bash
-# Lerie Taylor 2023
-# scarylerie@gmail.com
+# 666
+# get fresh proxies from websites
 
-#free proxy sites that show ips and ports
+#free proxy sites that show ips and port numbers (ex; ip:port)
 sites=(
 	https://proxyscrape.com/free-proxy-list
 	https://free-proxy-list.net/
@@ -38,12 +38,11 @@ done
 
 pcount=$(wc -l plist)
 filen=$(date '+%m%d%y-%H%M')
-mv plist $SCARYDIR/proxies/$filen
+mv plist ~/.666/scaryscripts/proxies/$filen
 
 echo "Cleaning up.."
 rm geonode.json \
 	src ips ports \
 	ipports freeproxy \
-	ipports2
 
 echo "$pcount Proxies found and archived"
